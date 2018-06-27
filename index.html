@@ -7,11 +7,17 @@
   crossorigin="anonymous"></script>
     <script>
       $(document).ready(function(){
-  $("button").click(function(){
-  alert("Hi from my page");
+  $("#button1").click(function(){
     $("iframe").hide();
   });
-  })
+  });
+    </script>
+    <script>
+      $(document).ready(function(){
+  $("#button2").click(function(){
+    $("iframe").hide();
+  });
+  });
     </script>
   </head>
   <link rel="stylesheet" href="index.css">
@@ -22,7 +28,9 @@
     <iframe width="500" height="500" src="https://www.youtube.com/embed/8busnzuCDRc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
     
     <iframe width="560" height="315" src="https://www.youtube.com/embed/XW9CBoz-lv0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-      </div>
+      <button id="button1">Hide</button>
+      <button id="button2">Show</button>
+          </div>
       </body>
   </html>
   
